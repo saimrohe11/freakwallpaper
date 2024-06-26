@@ -1,0 +1,170 @@
+body {
+    background-color: #0F0F0F;
+    color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F99417;
+}
+
+.menu-button {
+    font-size: 24px;
+    cursor: pointer;
+    color: #F5F5F5;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #1f1f1f;
+    width: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.headline-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.logo-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.wallpapers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wallpaper {
+    width: 200px;
+}
+
+.wallpaper img {
+    width: 100%;
+    height: auto;
+}
+
+.download {
+    background-color: #F99417;
+    color: #0F0F0F;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.review-button {
+    background-color: #F99417;
+    color: #0F0F0F;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .wallpapers-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .wallpaper {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headline-image {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .branding {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-button {
+        align-self: flex-end;
+    }
+}
